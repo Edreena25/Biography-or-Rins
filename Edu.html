@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography of Rins'</title>
+    <link rel="shortcut Icon" type="image/png"S href="tulips.png">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-color: #f6eee6; 
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header {
+            background-color: #BC8F8F;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #8b0000;
+        }
+        .logo {
+            font-family: "Brush Script MT", cursive;
+            font-size: 32px;
+        }
+        .nav a {
+            margin: 0 15px;
+            font-size: 18px;
+            color: white;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background-color: #FFFFE0;
+            text-align: center;
+            padding: 50px 10px;
+            border-bottom: 4px solid #8b0000;
+        }
+        .banner h1 {
+            font-size: 36px;
+            font-style: italic;
+            color: #333;
+        }
+        .education-achievement {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .achievement {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .achievement-item {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievement-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .school-logo {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .achievement-info {
+            flex-grow: 1;
+        }
+
+        .achievement-info h3 {
+            font-size: 1.5em;
+            color: #34495e;
+            margin: 0;
+        }
+
+        .achievement-info p {
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+
+        .read-more-btn {
+            background-color: #8b0000;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #8b0000;
+        }
+
+        .achievement-details {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #8b0000;
+        }
+
+        footer {
+            background-color: #BC8F8F;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 4px solid #8b0000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">♡♡♡</div>
+        <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="Rina.html">Profile</a>
+        <a href="Edu.html">Education</a>
+        <a href="Fav.html">Friends</a>
+        <a href="Gal.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+  
+    <section class="banner">
+	<center>
+        <h1><font color="#333">Rins' Education Achievement</font></h1>
+    </section>
+
+        <div class="achievement">
+            <div class="achievement-item">
+                <div class="achievement-header">
+                    <img src="uitm2.png" alt="School Logo" class="school-logo">
+                    <div class="achievement-info">
+                        <h3>Universiti Teknologi Mara, Mukah</h3>
+                        <p>Year: 2022-2024</p>
+                        <p>Course: Diploma in Banking Studies</p>
+                    </div>
+                </div>
+
+                <button class="read-more-btn" onclick="toggleDetails('achievement1')">Read More</button>
+                <div id="achievement1" class="achievement-details">
+                    <p>Details: This diploma covered topics such as Risk & Insurance, Investment Management, Banking Operations, Finance of International Trade, Financial Analysis, Fundamentals of Islamic Banking, International Banking, and Credit Management.</p>
+                    <p>Grade Point Average</p>
+                    <p>Semester 1: 3.96, Dean List</p>
+                    <p>Semester 2: 3.67, Dean List </p>
+                    <p>Semester 3: 3.79, Dean List</p>
+                    <p>Semester 4: 3.84, Dean List </p>
+                </div>
+            </div>
+
+            <div class="achievement-item">
+                <div class="achievement-header">
+                    <img src="Sp2.png" alt="School Logo" class="school-logo">
+                    <div class="achievement-info">
+                        <h3>Sekolah Menengah Kebangsaan Semerah Padi</h3>
+                        <p>Year:2017-2022</p>
+                 </div>
+                </div>
+
+                <button class="read-more-btn" onclick="toggleDetails('achievement2')">Read More</button>
+                <div id="achievement2" class="achievement-details">
+                    <p> Details: Single Subject Accountant.</p>
+                    <p>Sijil Pelajaran Malaysia (SPM): 4A, 5B+.</p>
+                </div>
+            </div>
+
+            <div class="achievement-item">
+                <div class="achievement-header">
+                    <img src="madrasah.png" alt="School Logo" class="school-logo">
+                    <div class="achievement-info">
+                        <h3>Sekolah Kebangsaan Madrasah Datuk Hj. Abdul Kadir Hasan</h3>
+                        <p>Year:2011-2026</p>
+                 </div>
+                </div>
+
+                <button class="read-more-btn" onclick="toggleDetails('achievement3')">Read More</button>
+                <div id="achievement3" class="achievement-details">
+                    <p>Ujian Pencapai Sekolah Rendah (UPSR): 5B, 1A</p>
+                </div>
+            </div>
+    </section>
+
+    <script>
+        function toggleDetails(achievementId) {
+            var details = document.getElementById(achievementId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block"; 
+            } else {
+                details.style.display = "none"; 
+            }
+        }
+    </script>
+        </div>
+    </div>
+
+<footer>
+    <p>&copy; Dayang Edreena Safiya, 2024, This website is created only for the purpose of IMD318.</p>
+</footer>
+</body>
+</html>

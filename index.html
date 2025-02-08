@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography of Rins'</title>
+    <link rel="shortcut Icon" type="image/png"S href="tulips.png">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-color: #f6eee6; 
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .header {
+            background-color: #BC8F8F;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #8b0000;
+        }
+        .logo {
+            font-family: "Brush Script MT", cursive;
+            font-size: 32px;
+        }
+        .nav a {
+            margin: 0 15px;
+            font-size: 18px;
+            color: white;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            background-color: #FFFFE0;
+            text-align: center;
+            padding: 50px 10px;
+            border-bottom: 4px solid #8b0000;
+        }
+        .banner h1 {
+            font-size: 36px;
+            font-style: italic;
+            color: #333;
+        }
+         .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 10%;
+        }
+
+        .content-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .content-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-text {
+            flex: 1;
+            padding: 0 45px;
+        }
+
+        .content-text h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .content-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: disc;
+            margin: 20px 40px;
+        }
+
+        ul li {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center;
+            font-weight: bold;
+        }
+        button {
+            display: block;
+            margin: 0 auto 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Georgia, serif;
+        }
+
+        button:hover {
+            background-color: #BC8F8F;
+        }
+
+        #demo {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+       footer {
+            background-color: #BC8F8F;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 4px solid #8b0000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">♡♡♡</div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="Rina.html">Profile</a>
+          <a href="Edu.html">Education</a>
+          <a href="Fav.html">Friends</a>
+          <a href="Gal.html">Gallery</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Welcome to the Biography of Rins'</h1>
+    </section>
+
+    <section class="content-container">
+        
+        <div class="content-image">
+            <img src="Home1.jpg" alt="Rina Sitting">
+        </div>
+
+        <div class="content-text">
+            <button onclick="displayGreeting()">Click Me</button>
+            <p id="demo"></p>
+            <h2>Once bitten, Twice shy</h2>
+            <p>
+                This website is all about Rina – a space where you can learn more about her life, passions, and journey. Whether you’re a friend, a family member, or just someone who stumbled upon this site, you’ll find a little glimpse into what makes Rina unique.
+            </p>
+        </div>
+    </section>
+
+  <script>
+    function displayGreeting() {
+        const now = new Date();
+        const hours = now.getHours();
+        let greeting;
+
+        if (hours < 12) {
+            greeting = "Good Morning";
+        } else if (hours < 18) {
+            greeting = "Good Afternoon";
+        } else {
+            greeting = "Good Evening";
+        }
+
+        document.getElementById("demo").innerText = greeting;
+    }
+</script>
+
+    <footer>
+        <p>&copy; Dayang Edreena Safiya, 2024, This website is created only for the purpose of IMD318.</p>
+    </footer>
+</body>
+</html>
